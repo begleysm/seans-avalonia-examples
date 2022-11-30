@@ -1,0 +1,18 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:vm="using:SeansAvaloniaExamples.ViewModels"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="SeansAvaloniaExamples.Views.PromptDialog"
+        Title="PromptDialog">
+    
+        <Design.DataContext>
+                <vm:PromptDialogViewModel/>
+        </Design.DataContext>
+        
+        <Panel>
+                <TextBlock>This is a Prompt Dialog!  You can't access the MainWindow until this is closed!</TextBlock>
+        </Panel>
+        
+</Window>
