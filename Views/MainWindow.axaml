@@ -16,7 +16,7 @@
         <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*">
             <Button Grid.Row="0" Grid.Column="0" Content="Button Serviced By View" Click="Button_OnClick" />
             <Button Grid.Row="1" Grid.Column="0" Content="Button Serviced by ViewModel" Command="{Binding Button_Command}" />
-            <Button Grid.Row="2" Grid.Column="0" Content="Button To Open New Window" Command="{Binding ShowSubWindow}"/>
+            <Button Grid.Row="2" Grid.Column="0" Content="Button To Open New Static Window" Command="{Binding ShowSubWindow}"/>
             <Button Grid.Row="3" Grid.Column="0" Content="Button To Open Dialog Prompt" Command="{Binding ShowPromptDialog}"/>
             
             <Grid Grid.Row="0" Grid.Column="1" ColumnDefinitions="*,*">

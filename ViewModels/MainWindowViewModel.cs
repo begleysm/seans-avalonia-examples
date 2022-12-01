@@ -8,6 +8,9 @@ namespace SeansAvaloniaExamples.ViewModels
 {
     public class MainWindowViewModel : ViewModelBase
     {
+        public static readonly Interaction<Unit, Unit> SubWindow = new();
+        public static readonly Interaction<Unit, Unit> PromptDialog = new();
+        public static readonly Interaction<Unit, Unit> CancelButton = new();
         public ReactiveCommand<Unit, Unit> Button_Command { get; }
         public ICommand ShowSubWindow { get; }
         public ICommand ShowPromptDialog { get; }
@@ -25,12 +28,12 @@ namespace SeansAvaloniaExamples.ViewModels
         
         private async Task SubWindowAsync()
         {
-            await Interactions.SubWindow.Handle(Unit.Default);
+            await SubWindow.Handle(Unit.Default);
         }
         
         private async Task PromptDialogAsync()
         {
-            var result = await Interactions.PromptDialog.Handle(Unit.Default);
+            var result = await PromptDialog.Handle(Unit.Default);
         }
     }
 }

@@ -30,8 +30,8 @@ namespace SeansAvaloniaExamples.Views
             //WINDOWS & PROMPTS
             this.WhenActivated(d =>
             {
-                d(Interactions.SubWindow.RegisterHandler(SubWindowAsync));
-                d(Interactions.PromptDialog.RegisterHandler(PromptDialogAsync));
+                d(MainWindowViewModel.SubWindow.RegisterHandler(SubWindowAsync));
+                d(MainWindowViewModel.PromptDialog.RegisterHandler(PromptDialogAsync));
             });
             
             //LIVE TIME
